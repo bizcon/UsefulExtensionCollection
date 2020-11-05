@@ -2,4 +2,8 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/UsefulExtensionCollection
+/.vs
+/src/UsefulExtensionCollection/bin
+/src/UsefulExtensionCollection/obj
+/test/UsefulExtensionCollection.Test/bin
+/test/UsefulExtensionCollection.Test/obj

@@ -1,0 +1,7 @@
+<Project>
+  <PropertyGroup>
+    <System-Linq-Dynamic-Core-Version>1.2.2</System-Linq-Dynamic-Core-Version>
+    <Microsoft-Extensions-Logging-Version>3.1.9</Microsoft-Extensions-Logging-Version>
+    <ServiceStack-Text-Core-Version>5.9.2</ServiceStack-Text-Core-Version>
+  </PropertyGroup>
+</Project>
