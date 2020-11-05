@@ -6,8 +6,8 @@ namespace UsefulExtensionCollection.Test
 {
     public class ReflectionPoco
     {
-        public int? Age { get; set; }
-        public string? Comment { get; set; }
+        public int Age { get; set; }
+        public string Comment { get; set; }
         public DateTime? Birthday { get; set; }
     }
 
