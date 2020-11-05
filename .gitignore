@@ -7,3 +7,7 @@
 /src/UsefulExtensionCollection/obj
 /test/UsefulExtensionCollection.Test/bin
 /test/UsefulExtensionCollection.Test/obj
+/src/bin
+/test/bin
+/src/obj
+/test/obj

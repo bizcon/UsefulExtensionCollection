@@ -1,8 +1,0 @@
-C:\development\VS\_PROJECTS\UsefulExtensionCollection\src\bin\Release\netcoreapp3.1\UsefulExtensionCollection.deps.json
-C:\development\VS\_PROJECTS\UsefulExtensionCollection\src\bin\Release\netcoreapp3.1\UsefulExtensionCollection.dll
-C:\development\VS\_PROJECTS\UsefulExtensionCollection\src\bin\Release\netcoreapp3.1\UsefulExtensionCollection.pdb
-C:\development\VS\_PROJECTS\UsefulExtensionCollection\src\obj\Release\netcoreapp3.1\UsefulExtensionCollection.AssemblyInfoInputs.cache
-C:\development\VS\_PROJECTS\UsefulExtensionCollection\src\obj\Release\netcoreapp3.1\UsefulExtensionCollection.AssemblyInfo.cs
-C:\development\VS\_PROJECTS\UsefulExtensionCollection\src\obj\Release\netcoreapp3.1\UsefulExtensionCollection.csproj.CoreCompileInputs.cache
-C:\development\VS\_PROJECTS\UsefulExtensionCollection\src\obj\Release\netcoreapp3.1\UsefulExtensionCollection.dll
-C:\development\VS\_PROJECTS\UsefulExtensionCollection\src\obj\Release\netcoreapp3.1\UsefulExtensionCollection.pdb
