@@ -10,12 +10,31 @@
     <PackageTags>c#, extensions, collection, task, merge, compare, filter, reflection, regex, certificate</PackageTags>
     <NeutralLanguage>ebu</NeutralLanguage>
     <Copyright>BizconAG copyright</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>bizcon.de</PackageProjectUrl>
+    <PackageIcon>BizconSignet.JPG</PackageIcon>
+    <RepositoryUrl>https://github.com/bizcon/UsefulExtensionCollection</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <FileVersion>2.0.0.0</FileVersion>
+    <Version>2.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Logging" Version="$(Microsoft-Extensions-Logging-Version)" />
     <PackageReference Include="System.Linq.Dynamic.Core" Version="$(System-Linq-Dynamic-Core-Version)" />
     <PackageReference Include="ServiceStack.Text.Core" Version="$(ServiceStack-Text-Core-Version)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\BizconSignet.JPG">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
