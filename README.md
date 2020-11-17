@@ -19,4 +19,8 @@ We think comments is useless metadata robbing developers time, which can better 
 # Maintenance
 As we use this package in multiple projects, our goal is to keep code and references up to to very regularly.
 
+# Contact
+development@bizcon.de
+https://www.bizcon.de
+
 #### your bizcons development team
