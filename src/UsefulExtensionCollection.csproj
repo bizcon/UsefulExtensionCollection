@@ -10,7 +10,7 @@
     <PackageTags>c#, extensions, collection, task, merge, compare, filter, reflection, regex, certificate</PackageTags>
     <NeutralLanguage>ebu</NeutralLanguage>
     <Copyright>bizcon</Copyright>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageProjectUrl>bizcon.de</PackageProjectUrl>
     <PackageIcon>bizcon.jpg</PackageIcon>
     <RepositoryUrl>https://github.com/bizcon/UsefulExtensionCollection</RepositoryUrl>
@@ -24,6 +24,14 @@
     <Compile Remove="UsefulExtensionCollection\**" />
     <EmbeddedResource Remove="UsefulExtensionCollection\**" />
     <None Remove="UsefulExtensionCollection\**" />
+    <None Include="..\bizcon.jpg">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

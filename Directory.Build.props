@@ -1,7 +1,10 @@
 <Project>
   <PropertyGroup>
-    <System-Linq-Dynamic-Core-Version>1.2.2</System-Linq-Dynamic-Core-Version>
-    <Microsoft-Extensions-Logging-Version>3.1.9</Microsoft-Extensions-Logging-Version>
-    <ServiceStack-Text-Core-Version>5.9.2</ServiceStack-Text-Core-Version>
+    <System-Linq-Dynamic-Core-Version>1.2.5</System-Linq-Dynamic-Core-Version>
+    <Microsoft-Extensions-Logging-Version>5.0.0</Microsoft-Extensions-Logging-Version>
+    <ServiceStack-Text-Core-Version>5.10.2</ServiceStack-Text-Core-Version>
+    <Microsoft-NET-Test-Sdk-Version>16.8.0</Microsoft-NET-Test-Sdk-Version>
+    <MSTest-Test-Version>2.1.2</MSTest-Test-Version>
+	<coverlet-collector-Version>1.3.0</coverlet-collector-Version>
   </PropertyGroup>
 </Project>
