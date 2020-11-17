@@ -18,7 +18,7 @@ namespace UsefulExtensionCollection.Test
         private const string expectedTrue = "Expected true";
         private const string expectedFalse = "Expected false";
 
-        [DataTestMethod]
+        [TestMethod]
         public void BasicTest()
         {
             FilterPoco poco1 = new FilterPoco() { Age = 1, Comment = "Comment", Lenght = 7, Adress = "Adress" };

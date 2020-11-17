@@ -29,6 +29,33 @@ namespace Bizcon.Extensions
             }
         }
 
+        public static async Task<T> TimedOutAsync<T>(this Task<T> task, TimeSpan timeout, T defaultReturn = default(T))
+        {
+            if (timeout.TotalMilliseconds < 0 || (timeout.TotalMilliseconds > 0 && timeout.TotalMilliseconds < 100)) { throw new ArgumentOutOfRangeException(); }
+
+            if (timeout.TotalMilliseconds == 0)
+            {
+                if (task.IsCompleted)
+                {
+                    return await task;
+                }
+                else
+                {
+                    return defaultReturn;
+                }
+            }
+            var cts = new CancellationTokenSource();
+            if (await Task.WhenAny(task, Task.Delay(timeout, cts.Token)) == task)
+            {
+                cts.Cancel();
+                return await task;
+            }
+            else
+            {
+                return defaultReturn;
+            }
+        }
+
         public static async Task<T> CancelAfterAsync<T>(this Func<CancellationToken, Task<T>> actionAsync, TimeSpan timeout)
         {
             if (timeout.TotalMilliseconds < 0 || (timeout.TotalMilliseconds > 0 && timeout.TotalMilliseconds < 100)) { throw new ArgumentOutOfRangeException(); }
