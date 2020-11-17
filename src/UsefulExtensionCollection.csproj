@@ -32,15 +32,4 @@
     <PackageReference Include="ServiceStack.Text.Core" Version="$(ServiceStack-Text-Core-Version)" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Include="..\bizcon.jpg">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
-    <None Include="..\LICENSE">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
-  </ItemGroup>
-
 </Project>
