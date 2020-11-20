@@ -1,23 +1,22 @@
 # Introduction 
-* Useful (most of) extensions (most of).
-* Alert: Not use extensions at all, use DI instead. We heavily use https://autofac.org/.
-* Nevertheless, 'outsourced' as well tested and maintained package, we use it within several projects.
+Although using extensions methods contradicts to DI container (bizcon heavily uses https://autofac.org/), it's usage could save great development time in certain circumstances / phases.
+The more, the better maintained and tested these shared assemblies are...
 
 # Extensions
-* Certificate
-* Compare
-* Filter
-* Log
-* Merge
-* Reflection
-* Task
+* Certificate (System.Security.Cryptography.X509Certificates.X509Certificate2)
+* Compare (System.Object)
+* Filter (System.Object)
+* Log (System.Object)
+* Merge (System.Object)
+* Reflection (System.Object)
+* Task (System.Threading.Tasks.Task and suitable)
 
 # Comments
-Once you write a comment, it's obsolete.
-We think comments is useless metadata robbing developers time, which can better be used to write clean code, not need any metadata to be understandable.
+Once a comment is written, it's obsolete!
+Comments is useless metadata robbing developers time, which can better be used to write clean code, not need any metadata to be understood.
 
 # Maintenance
-As we use this package in multiple projects, our goal is to keep code and references up to date very regularly.
+As we use this package in multiple projects, our goal is to keep code and referenced assembly versions up to date regularly.
 
 # Package
 https://www.nuget.org/packages/BizconsUsefulExtensionCollection/
