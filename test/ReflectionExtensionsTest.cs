@@ -17,14 +17,12 @@ namespace bizconAg.Extensions.Test
     {
         private const string expectedEqual = "Expected equals";
         private const string expectedNoException = "Expected no exception";
-        private const string expectedNull = "Expected null";
-        private const string expectedNotNull = "Expected not null";
 
         [DataTestMethod]
         public void SetPropertyValueTest()
         {
             DateTime birthday = DateTime.Now;
-            ReflectionPoco poco1 = new ReflectionPoco() { Age = 1, Comment = "Comment", Birthday = birthday };
+            ReflectionPoco poco1 = new() { Age = 1, Comment = "Comment", Birthday = birthday };
 
             poco1.SetPropertyValue("Age", 2);
             poco1.SetPropertyValue("Comment", "Comment2");
@@ -48,7 +46,7 @@ namespace bizconAg.Extensions.Test
         public void GetPropertyValueTest()
         {
             DateTime birthday = DateTime.Now;
-            ReflectionPoco poco1 = new ReflectionPoco() { Age = 1, Comment = "Comment", Birthday = birthday };
+            ReflectionPoco poco1 = new() { Age = 1, Comment = "Comment", Birthday = birthday };
 
             int age = (int)poco1.GetPropertyValue("Age");
             string comment = (string)poco1.GetPropertyValue("Comment");

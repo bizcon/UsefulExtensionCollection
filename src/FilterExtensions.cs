@@ -10,7 +10,7 @@ namespace bizconAG.Extensions
 {
     public static class FilterExtensions
     {
-        public static Dictionary<Type, Func<string, string>> RegisteredTypedFilterPatcher = new Dictionary<Type, Func<string, string>>()
+        public static Dictionary<Type, Func<string, string>> RegisteredTypedFilterPatcher = new()
         {
             { typeof(JsonElement), JsonElementFilterPatcher }
         };

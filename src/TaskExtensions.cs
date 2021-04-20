@@ -10,7 +10,7 @@ namespace bizconAG.Extensions
     {
         public static async Task<bool> TimedOutAsync(this Task task, TimeSpan timeout)
         {
-            if (timeout.TotalMilliseconds < 0 || (timeout.TotalMilliseconds > 0 && timeout.TotalMilliseconds < 100)) { throw new ArgumentOutOfRangeException(); }
+            if (timeout.TotalMilliseconds < 0 || (timeout.TotalMilliseconds > 0 && timeout.TotalMilliseconds < 100)) { throw new ArgumentOutOfRangeException(nameof(timeout), "timeout >= 100 || timeout == 0 allowed"); }
 
             if (timeout.TotalMilliseconds == 0)
             {
@@ -29,9 +29,9 @@ namespace bizconAG.Extensions
             }
         }
 
-        public static async Task<T> TimedOutAsync<T>(this Task<T> task, TimeSpan timeout, T defaultReturn = default(T))
+        public static async Task<T> TimedOutAsync<T>(this Task<T> task, TimeSpan timeout, T defaultReturn = default)
         {
-            if (timeout.TotalMilliseconds < 0 || (timeout.TotalMilliseconds > 0 && timeout.TotalMilliseconds < 100)) { throw new ArgumentOutOfRangeException(); }
+            if (timeout.TotalMilliseconds < 0 || (timeout.TotalMilliseconds > 0 && timeout.TotalMilliseconds < 100)) { throw new ArgumentOutOfRangeException(nameof(timeout), "timeout >= 100 || timeout == 0 allowed"); }
 
             if (timeout.TotalMilliseconds == 0)
             {
@@ -58,7 +58,7 @@ namespace bizconAG.Extensions
 
         public static async Task<T> CancelAfterAsync<T>(this Func<CancellationToken, Task<T>> actionAsync, TimeSpan timeout)
         {
-            if (timeout.TotalMilliseconds < 0 || (timeout.TotalMilliseconds > 0 && timeout.TotalMilliseconds < 100)) { throw new ArgumentOutOfRangeException(); }
+            if (timeout.TotalMilliseconds < 0 || (timeout.TotalMilliseconds > 0 && timeout.TotalMilliseconds < 100)) { throw new ArgumentOutOfRangeException(nameof(timeout), "timeout >= 100 || timeout == 0 allowed"); }
 
             var taskCts = new CancellationTokenSource();
             var timerCts = new CancellationTokenSource();
@@ -76,7 +76,7 @@ namespace bizconAG.Extensions
 
         public static async Task<T> CancelAfterAsync<T>(this Task<T> task, TimeSpan timeout, CancellationTokenSource cancellationTokenSource)
         {
-            if (timeout.TotalMilliseconds < 0 || (timeout.TotalMilliseconds > 0 && timeout.TotalMilliseconds < 100)) { throw new ArgumentOutOfRangeException(); }
+            if (timeout.TotalMilliseconds < 0 || (timeout.TotalMilliseconds > 0 && timeout.TotalMilliseconds < 100)) { throw new ArgumentOutOfRangeException(nameof(timeout), "timeout >= 100 || timeout == 0 allowed"); }
 
             var timerCts = new CancellationTokenSource();
             if (await Task.WhenAny(task, Task.Delay(timeout, timerCts.Token)) == task)

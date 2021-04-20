@@ -26,7 +26,7 @@ namespace bizconAg.Extensions.Test
         [TestMethod]
         public void BasicTest()
         {
-            FilterPoco poco1 = new FilterPoco() { Age = 1, Comment = "Comment", Lenght = 7, Adress = "Adress" };
+            FilterPoco poco1 = new() { Age = 1, Comment = "Comment", Lenght = 7, Adress = "Adress" };
             Assert.IsTrue(poco1.FilterApplies<FilterPoco>("Age==1"), expectedTrue);
             Assert.IsTrue(poco1.FilterApplies<FilterPoco>("Comment==\"Comment\""), expectedTrue);
             Assert.IsTrue(poco1.FilterApplies<FilterPoco>("Lenght==7"), expectedTrue);
@@ -40,7 +40,7 @@ namespace bizconAg.Extensions.Test
         [TestMethod]
         public void ExceptionTest()
         {
-            FilterPoco poco1 = new FilterPoco() { };
+            FilterPoco poco1 = new() { };
             Assert.IsFalse(poco1.FilterApplies<FilterPoco>("blabla"), expectedFalse);
         }
 

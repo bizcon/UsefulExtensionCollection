@@ -30,8 +30,8 @@ namespace bizconAg.Extensions.Test
         [DataTestMethod]
         public void BasicTest()
         {
-            MergeBasePoco basePoco = new MergeBasePoco() { Age = 1, Comment = "Comment", Lenght = 7, Adress = "Adress" };
-            MergePoco mergePoco = new MergePoco() { Age = 2, Name = "Name" };
+            MergeBasePoco basePoco = new() { Age = 1, Comment = "Comment", Lenght = 7, Adress = "Adress" };
+            MergePoco mergePoco = new() { Age = 2, Name = "Name" };
 
             MergeBasePoco mergedPoco = basePoco.MergeType(mergePoco);
 

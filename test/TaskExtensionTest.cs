@@ -10,7 +10,7 @@ namespace bizconAg.Extensions.Test
     [TestClass]
     public class TaskExtensionsTest
     {
-        private async Task<int> WaitAndGetIntAsync(int msWait, CancellationToken token)
+        private static async Task<int> WaitAndGetIntAsync(int msWait, CancellationToken token)
         {
             int wait = 100;
             int count = msWait / wait;
@@ -26,7 +26,7 @@ namespace bizconAg.Extensions.Test
 
         private async Task<int> WaitAndGetIntDelegateAsync(CancellationToken token)
         {
-            return await this.WaitAndGetIntAsync(2000, token);
+            return await WaitAndGetIntAsync(2000, token);
         }
 
         private const string expectedEqual = "Expected equal";
@@ -35,12 +35,12 @@ namespace bizconAg.Extensions.Test
         [TestMethod]
         public async Task TimedOutAsyncTest()
         {
-            CancellationTokenSource source = new CancellationTokenSource();
+            CancellationTokenSource source = new();
             int wait = 2000;
             int result = await WaitAndGetIntAsync(wait, source.Token).TimedOutAsync(TimeSpan.FromMilliseconds(3000));
             Assert.AreEqual(wait, result, expectedEqual);
             result = await WaitAndGetIntAsync(wait, source.Token).TimedOutAsync(TimeSpan.FromMilliseconds(1000));
-            Assert.AreEqual(default(int), result, expectedEqual);
+            Assert.AreEqual(default, result, expectedEqual);
             result = await WaitAndGetIntAsync(wait, source.Token).TimedOutAsync(TimeSpan.FromMilliseconds(1000), 33);
             Assert.AreEqual(33, result, expectedEqual);
             result = await WaitAndGetIntAsync(wait, source.Token).TimedOutAsync(TimeSpan.FromMilliseconds(3000), 77);
@@ -51,7 +51,7 @@ namespace bizconAg.Extensions.Test
         public async Task CancelAfterAsyncTaskTest()
         {
             int wait = 2000;
-            CancellationTokenSource source = new CancellationTokenSource();
+            CancellationTokenSource source = new();
 
             try
             {
@@ -75,7 +75,7 @@ namespace bizconAg.Extensions.Test
         public async Task CancelAfterAsyncDelegateTest()
         {
             int wait = 2000;
-            CancellationTokenSource source = new CancellationTokenSource();
+            CancellationTokenSource source = new();
 
             try
             {

@@ -6,7 +6,7 @@ namespace bizconAG.Extensions
 {
     public static class CompareExtensions
     {
-        static readonly Dictionary<Type, object> cache = new Dictionary<Type, object>();
+        static readonly Dictionary<Type, object> cache = new();
 
         public static object GetDefaultValue(Type t)
         {
@@ -109,7 +109,7 @@ namespace bizconAG.Extensions
 
         public static T CompareGetObject<T>(this T compareObject, T withObject) where T : new()
         {
-            T returnObject = new T();
+            T returnObject = new();
 
             var properties = typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance);
             foreach (var property in properties)
@@ -141,8 +141,8 @@ namespace bizconAG.Extensions
 
         public static Tuple<T, T> CompareGetObjects<T>(this T compareObject, T withObject) where T : new()
         {
-            T returnObject1 = new T();
-            T returnObject2 = new T();
+            T returnObject1 = new();
+            T returnObject2 = new();
 
             var properties = typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance);
             foreach (var property in properties)
