@@ -3,7 +3,7 @@ using System.Linq;
 using System.Linq.Dynamic.Core;
 using System.Security.Cryptography.X509Certificates;
 
-namespace Bizcon.Extensions
+namespace bizconAG.Extensions
 {
     public static class CertificateExtensions
     {

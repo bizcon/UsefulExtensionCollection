@@ -1,7 +1,7 @@
-using Bizcon.Extensions;
+using bizconAG.Extensions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace UsefulExtensionCollection.Test
+namespace bizconAg.Extensions.Test
 {
     public class MergePoco
     {

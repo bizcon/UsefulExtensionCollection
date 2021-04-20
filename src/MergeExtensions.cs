@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Reflection;
 
-namespace Bizcon.Extensions
+namespace bizconAG.Extensions
 {
     public static class MergeExtensions
     {

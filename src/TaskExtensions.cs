@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Bizcon.Extensions
+namespace bizconAG.Extensions
 {
     public static class TaskExtensions
     {

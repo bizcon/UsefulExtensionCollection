@@ -1,8 +1,8 @@
-using Bizcon.Extensions;
+using bizconAG.Extensions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace UsefulExtensionCollection.Test
+namespace bizconAg.Extensions.Test
 {
     public class ReflectionPoco
     {

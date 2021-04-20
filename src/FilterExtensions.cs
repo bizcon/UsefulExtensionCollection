@@ -6,7 +6,7 @@ using System.Linq.Dynamic.Core;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 
-namespace Bizcon.Extensions
+namespace bizconAG.Extensions
 {
     public static class FilterExtensions
     {

@@ -1,10 +1,10 @@
-using Bizcon.Extensions;
+using bizconAG.Extensions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
-using static Bizcon.Extensions.CompareExtensions;
+using static bizconAG.Extensions.CompareExtensions;
 
-namespace UsefulExtensionCollection.Test
+namespace bizconAg.Extensions.Test
 {
     public class ComparisonPoco
     {

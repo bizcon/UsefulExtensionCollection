@@ -1,4 +1,4 @@
-using Bizcon.Extensions;
+using bizconAG.Extensions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Dynamic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Linq.Dynamic.Core;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 
-namespace UsefulExtensionCollection.Test
+namespace bizconAg.Extensions.Test
 {
     public class FilterPoco
     {

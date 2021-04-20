@@ -1,6 +1,6 @@
 ﻿using ServiceStack;
 
-namespace Bizcon.Extensions
+namespace bizconAG.Extensions
 {
     public static class LogExtensions
     {

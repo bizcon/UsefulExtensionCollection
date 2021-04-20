@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace Bizcon.Extensions
+namespace bizconAG.Extensions
 {
     public static class MatchExtensions
     {

@@ -1,8 +1,8 @@
-using Bizcon.Extensions;
+using bizconAG.Extensions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Text.RegularExpressions;
 
-namespace UsefulExtensionCollection.Test
+namespace bizconAg.Extensions.Test
 {
     [TestCategory("Unit")]
     [TestClass]

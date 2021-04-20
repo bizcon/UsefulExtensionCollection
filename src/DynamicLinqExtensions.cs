@@ -1,7 +1,7 @@
 ﻿using System.Linq.Dynamic.Core.CustomTypeProviders;
 using System.Text.Json;
 
-namespace Bizcon.Extensions
+namespace bizconAG.Extensions
 {
     [DynamicLinqType]
     public static class DynamicLinqTypeProvider

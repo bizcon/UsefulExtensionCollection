@@ -1,12 +1,11 @@
-using Bizcon.Extensions;
+using bizconAG.Extensions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace UsefulExtensionCollection.Test
+namespace bizconAg.Extensions.Test
 {
-
     [TestCategory("Unit")]
     [TestClass]
     public class TaskExtensionsTest
