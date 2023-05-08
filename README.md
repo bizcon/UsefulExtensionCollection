@@ -1,5 +1,5 @@
 # Introduction 
-Although using extensions methods contradicts to DI container (bizcon heavily uses https://autofac.org/), it's usage could save great development time in certain circumstances / phases.
+Although using extensions methods contradicts to DI/container, it's usage could save great development time in certain circumstances / phases.
 The more, the better maintained and tested these shared assemblies are...
 
 # Extensions
